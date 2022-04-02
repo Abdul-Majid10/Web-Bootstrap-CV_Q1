@@ -1,0 +1,165 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+}
+
+.bg {
+    background-image: url(../images/bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+}
+header * {
+    transition: ease-in-out 0.3s;
+}
+
+.name {
+    font-weight: 700;
+}
+
+.name a {
+    text-decoration: none;
+    color: white;
+    font-size: 48px;
+}
+
+header h2 {
+    font-size: 20px;
+    margin-top: 20px;
+    line-height: 2.5rem;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+header h2 span {
+    color: #fff;
+    border-bottom: 2px solid #18d26e;
+    padding-bottom: 6px;
+}
+
+.navbar {
+    padding: 0;
+    margin-top: 35px;
+}
+
+.navbar li {
+    list-style: none;
+    position: relative;
+}
+
+.navbar a:hover:before,
+.navbar li:hover > a:before,
+.navbar .active:before {
+    visibility: visible;
+    width: 25px;
+}
+
+.navbar a:hover,
+.navbar .active,
+.navbar .active:focus,
+.navbar li:hover > a {
+    color: #fff;
+    /* border-bottom: 2px solid #18d26e; */
+    /* padding-bottom: 0.4rem; */
+}
+
+.navbar a,
+.navbar a:focus {
+    padding: 0;
+    margin-right: 3rem;
+    font-size: 16px;
+    font-weight: 400;
+    color: rgba(255, 255, 255, 0.7);
+    transition: 0.3s;
+}
+.navbar ul {
+    padding: 0;
+}
+
+.navbar a:before {
+    content: "";
+    position: absolute;
+
+    height: 2px;
+    bottom: -4px;
+    left: 0;
+    background-color: #18d26e;
+    transition: all 0.3s ease-in-out 0s;
+}
+
+header .social-links {
+    margin-top: 20px;
+    /* display: flex; */
+    /* color: #fff; */
+}
+header .social-links i {
+    color: white;
+}
+header .social-links a {
+    padding: 0.3rem 0.7rem 0.7rem 0.7rem;
+    background-color: rgba(61, 60, 60, 0.8);
+    border-radius: 50%;
+    margin-right: 0.3rem;
+}
+
+header .social-links a:hover,
+header .social-links a:hover:focus {
+    background-color: #18d26e;
+}
+
+header {
+    display: flex;
+    align-items: center;
+}
+
+.info {
+    z-index: 1;
+    margin-left: 3rem;
+    width: fit-content;
+}
+
+.hide {
+    display: none;
+}
+
+/* X-Large devices (large desktops, less than 1400px) */
+@media (max-width: 1399.98px) {
+}
+
+/* Large devices (desktops, less than 1200px) */
+@media (max-width: 1199.98px) {
+}
+
+/* Medium devices (tablets, less than 992px) */
+@media (max-width: 991.98px) {
+    .info {
+        text-align: center;
+    }
+
+    nav.navbar {
+        display: none;
+    }
+
+    .ad-pic {
+        opacity: 0.7;
+    }
+}
+
+/* Small devices (landscape phones, less than 768px) */
+@media (max-width: 767.98px) {
+    .info {
+        margin-left: 0;
+    }
+}
+
+/* X-Small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {
+    .container.info {
+        margin: 8rem 0 0 0;
+    }
+}
+
+/* 
+// XX-Large devices (larger desktops)
+// No media query since the xxl breakpoint has no upper bound on its width */
