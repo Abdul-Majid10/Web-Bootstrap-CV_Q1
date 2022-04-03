@@ -95,6 +95,7 @@ header .social-links {
 }
 header .social-links i {
     color: white;
+    font-size: 1.1rem;
 }
 header .social-links a {
     padding: 0.3rem 0.7rem 0.7rem 0.7rem;
