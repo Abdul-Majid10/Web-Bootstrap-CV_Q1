@@ -5,7 +5,10 @@ $(".nav-link").click(function (e) {
         $("section").addClass("dis-none");
     } else {
         $("#header").addClass("header-top");
-        $("section").removeClass("dis-none");
+        $("section").addClass("dis-none");
+        $("section.".concat(e.target.hash.substring(1))).removeClass(
+            "dis-none"
+        );
     }
     $(".nav-link").removeClass("active");
     $(e.target).addClass("active");
