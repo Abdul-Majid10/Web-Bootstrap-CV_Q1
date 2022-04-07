@@ -7,6 +7,7 @@ body {
 }
 
 .bg {
+    position: relative;
     background-image: url(../images/bg.png);
     background-repeat: no-repeat;
     background-size: cover;
@@ -162,6 +163,14 @@ header {
 /* 
 // XX-Large devices (larger desktops)
 // No media query since the xxl breakpoint has no upper bound on its width */
+section {
+    overflow: hidden;
+    position: absolute;
+    width: 100%;
+    top: 80px;
+    transition: ease-in-out 0.4s;
+    z-index: -2;
+}
 
 section .container {
     background: rgba(0, 0, 0, 0.9);
@@ -843,4 +852,13 @@ section {
 .navbar-mobile a:focus {
     font-size: 16px;
     position: relative;
+}
+
+#header.header-top {
+    height: 80px;
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.9);
 }
